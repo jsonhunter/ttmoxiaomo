@@ -34,6 +34,33 @@ ul, li {
       line-height: 0;
       background-position: -17px -142px;
       margin: 0 auto; }
+  .header .short-cut .rgt {
+    float: right; }
+    .header .short-cut .rgt .icobg {
+      background-image: url("../images/icon.png");
+      background-repeat: no-repeat;
+      line-height: 16px;
+      height: 16px;
+      margin: 8px 0 0;
+      float: left;
+      padding: 0 0 0 20px;
+      color: #666; }
+    .header .short-cut .rgt li {
+      float: left;
+      padding: 0 16px 0 0; }
+    .header .short-cut .rgt li.login .icobg {
+      background-position: 0 -75px; }
+    .header .short-cut .rgt li.regs a {
+      color: #666666; }
+    .header .short-cut .rgt li.cut {
+      width: 2px;
+      height: 29px;
+      overflow: hidden;
+      text-indent: -999px;
+      font-size: 0;
+      line-height: 0;
+      background-position: -17px -142px;
+      margin: 0 auto; }
 .header .contain {
   width: 100%;
   border-bottom: 1px solid #efefef; }
@@ -67,7 +94,7 @@ ul, li {
       text-align: center;
       position: inherit; }
       .header .nav-tag ul.nav-bar li.nav-tabs .first-tab.active {
-        background: #2aabd2; }
+        background: #cccccc; }
       .header .nav-tag ul.nav-bar li.nav-tabs .sec-tab {
         background: #efefef;
         clear: both;
@@ -116,7 +143,8 @@ ul, li {
   .card > h3, .card > p {
     text-align: center; }
   .card > h3 {
-    margin-top: 40px; }
+    margin-top: 40px;
+    font-weight: bold; }
   .card > p {
     margin-bottom: 15px; }
   .card ul.daily-rec {
@@ -242,7 +270,7 @@ ul, li {
     text-align: center;
     padding: 25px; }
   .band .band-top {
-    margin: 0 auto 15px auto;
+    margin: 0 auto 25px auto;
     width: 1200px;
     text-align: center;
     background: url("../images/newioc4-6.jpg") no-repeat top center;
@@ -269,7 +297,7 @@ ul, li {
       overflow: hidden; }
       .band .band-body ul li {
         float: left;
-        margin-bottom: 15px; }
+        margin-bottom: 25px; }
         .band .band-body ul li a {
           display: block;
           clear: both;
@@ -295,12 +323,60 @@ ul, li {
 .common-goods {
   clear: both;
   overflow: hidden; }
+  .common-goods .common-logo {
+    text-align: center;
+    padding: 25px; }
+    .common-goods .common-logo h3 {
+      font-weight: bold; }
   .common-goods ul {
     margin: 0 auto;
     width: 1200px;
     padding: 0; }
     .common-goods ul li:nth-child(3n+2) {
       border-left: 1px solid #dddddd;
-      border-right: 1px solid #dddddd; }
+      border-right: 1px solid #dddddd;
+      padding-top: 100px; }
+      .common-goods ul li:nth-child(3n+2) .item-goods:hover a {
+        top: 40px; }
+    .common-goods ul li {
+      overflow: hidden;
+      height: 710px; }
+      .common-goods ul li .item-goods {
+        clear: both;
+        overflow: hidden;
+        height: 355px;
+        position: relative; }
+        .common-goods ul li .item-goods .desc {
+          position: absolute;
+          z-index: 5; }
+        .common-goods ul li .item-goods a {
+          clear: both;
+          overflow: hidden;
+          position: absolute;
+          top: 50px;
+          right: 50px;
+          z-index: 2;
+          transition: all .3s linear; }
+      .common-goods ul li .item-goods:nth-child(even) {
+        border-top: 1px solid #262626; }
+    .common-goods ul li:nth-child(3n+1) .item-goods:hover a {
+      right: 60px; }
+    .common-goods ul li:nth-child(3n) .item-goods:hover a {
+      right: 60px; }
+
+.ui-gotop {
+  position: fixed;
+  bottom: 150px;
+  z-index: 99999;
+  right: 150px; }
+  .ui-gotop ul {
+    padding: 0px; }
+    .ui-gotop ul li {
+      display: none;
+      cursor: pointer;
+      background: #333333;
+      padding: 10px; }
+      .ui-gotop ul li span {
+        color: #FFFFFF; }
 
 /*# sourceMappingURL=common.css.map */
