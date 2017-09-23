@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <title>Asnlife</title>
+    <style>
+        *{
+            font-family: 微软雅黑;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="short-cut">
+        <ul class="lft clearfix">
+            <li class="phone"><a href="#" class="icobg">手机版</a></li>
+            <li class="cut icobg"></li>
+            <li class="other"><a href="http://e.weibo.com/cntvmall" class="weibo icobg" target="_blank">cctv新浪微博</a></li>
+        </ul>
+    </div>
+    <div class="contain">
+        <div class="con-header">
+            <a class="logo" href="index.html"></a>
+            <div class="nav-right">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="nav-tag">
+        <ul class="nav nav-bar">
+            <li class="nav-tabs">
+                <a class="first-tab active" href="#">首页</a>
+            </li>
+            <li class="nav-tabs">
+                <a class="first-tab" href="#">家用电器</a>
+                <div class="sec-tab">
+                    <ul>
+                        <li><a href="#">电视</a></li>
+                        <li><a href="#">空调</a></li>
+                        <li><a href="#">洗衣机</a></li>
+                        <li><a href="#">厨卫大电</a></li>
+                        <li><a href="#">厨房小电</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-tabs">
+                <a class="first-tab" href="#">家居</a>
+                <div class="sec-tab">
+                    <ul>
+                        <li><a href="#">家纺</a></li>
+                        <li><a href="#">生活日用品</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-tabs">
+                <a class="first-tab" href="#">美妆护肤</a>
+                <div class="sec-tab">
+                    <ul>
+                        <li><a href="#">面部护肤</a></li>
+                        <li><a href="#">洗发护发</a></li>
+                        <li><a href="#">口腔护理</a></li>
+                        <li><a href="#">女性护理</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-tabs">
+                <a class="first-tab" href="#">图书</a>
+                <div class="sec-tab">
+                    <ul>
+                        <li><a href="#">教育类</a></li>
+                        <li><a href="#">科普类</a></li>
+                        <li><a href="#">科技类</a></li>
+                        <li><a href="#">生活类</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="contain " style="min-height: 600px;">
+    <!--轮播开始-->
+    <div id="myCarousel" class="carousel slide" style="overflow: hidden;margin: 0 auto">
+        <!-- 轮播（Carousel）指标 -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- 轮播（Carousel）项目 -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/59603cbaba9b46bb9d6516031a9ce59d.jpg" alt="">
+                <div class="carousel-caption">标题 1标题 1标题 1标题 1标题 1标题 1标题 1标题 1标题 1标题 1标题 1</div>
+            </div>
+            <div class="item">
+                <img src="images/59603cbaba9b46bb9d6516031a9ce59d.jpg" alt="">
+                <div class="carousel-caption">标题 2标题 2标题 2标题 2标题 2标题 2标题 2标题 2标题 2</div>
+            </div>
+            <div class="item">
+                <img src="images/59603cbaba9b46bb9d6516031a9ce59d.jpg" alt="">
+                <div class="carousel-caption">标题 3标题 3标题 3标题 3标题 3标题 3标题 3标题 3标题 3标题 3</div>
+            </div>
+        </div>
+        <!-- 轮播（Carousel）导航 -->
+        <a class="carousel-control left" href="#myCarousel"
+           data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel"
+           data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!--轮播结束-->
+    <div class="card">
+        <h3>今日推荐</h3>
+        <ul class="daily-rec">
+            <li class="col-sm-3">
+                <a class="img-show" href="#"><img src="images/img1.jpg" alt=""></a>
+                <a class="desc" href="#">xxx笔记本电脑8核心，游戏电脑</a>
+                <span class="price">¥1000元 <i>¥1000元 </i></span>
+            </li>
+            <li class="col-sm-3">
+                <a class="img-show" href="#"><img src="images/img2.jpg" alt=""></a>
+                <a class="desc" href="#">xxx笔记本电脑8核心，游戏电脑</a>
+                <span class="price">¥1000元 <i>¥1000元 </i></span>
+            </li>
+            <li class="col-sm-3">
+                <a class="img-show" href="#"><img src="images/img3.jpg" alt=""></a>
+                <a class="desc" href="#">xxx笔记本电脑8核心，游戏电脑</a>
+                <span class="price">¥1000元 <i>¥1000元 </i></span>
+            </li>
+            <li class="col-sm-3">
+                <a class="img-show" href="#"><img src="images/img4.jpg" alt=""></a>
+                <a class="desc" href="#">xxx笔记本电脑8核心，游戏电脑</a>
+                <span class="price">¥1000元 <i>¥1000元 </i></span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>本周人气榜</h3>
+        <ul class="week-rec">
+            <li class="col-sm-3">
+                <a class="img-show" href="#"><img src="images/img1.jpg" alt=""></a>
+                <a class="desc" href="#">xxx笔记本电脑8核心，游戏电脑</a>
+                <span class="price">¥1000元 <i>¥1000元 </i></span>
+            </li>
+            <li class="col-sm-3">
+                <a class="img-show" href="#"><img src="images/img2.jpg" alt=""></a>
+                <a class="desc" href="#">xxx笔记本电脑8核心，游戏电脑</a>
+                <span class="price">¥1000元 <i>¥1000元 </i></span>
+            </li>
+            <li class="col-sm-3">
+                <a class="img-show" href="#"><img src="images/img3.jpg" alt=""></a>
+                <a class="desc" href="#">xxx笔记本电脑8核心，游戏电脑</a>
+                <span class="price">¥1000元 <i>¥1000元 </i></span>
+            </li>
+            <li class="col-sm-3">
+                <a class="img-show" href="#"><img src="images/img4.jpg" alt=""></a>
+                <a class="desc" href="#">xxx笔记本电脑8核心，游戏电脑</a>
+                <span class="price">¥1000元 <i>¥1000元 </i></span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>今日推荐</h3>
+        <ul class="daily-rec">
+            <li class="col-sm-3">
+                <a class="img-show" href="#"><img src="images/img1.jpg" alt=""></a>
+                <a class="desc" href="#">xxx笔记本电脑8核心，游戏电脑</a>
+                <span class="price">¥1000元 <i>¥1000元 </i></span>
+            </li>
+            <li class="col-sm-3">
+                <a class="img-show" href="#"><img src="images/img2.jpg" alt=""></a>
+                <a class="desc" href="#">xxx笔记本电脑8核心，游戏电脑</a>
+                <span class="price">¥1000元 <i>¥1000元 </i></span>
+            </li>
+            <li class="col-sm-3">
+                <a class="img-show" href="#"><img src="images/img3.jpg" alt=""></a>
+                <a class="desc" href="#">xxx笔记本电脑8核心，游戏电脑</a>
+                <span class="price">¥1000元 <i>¥1000元 </i></span>
+            </li>
+            <li class="col-sm-3">
+                <a class="img-show" href="#"><img src="images/img4.jpg" alt=""></a>
+                <a class="desc" href="#">xxx笔记本电脑8核心，游戏电脑</a>
+                <span class="price">¥1000元 <i>¥1000元 </i></span>
+            </li>
+        </ul>
+    </div>
+
+
+
+</div>
+<div class="footer">
+    <section class="help">
+        <dl class="help_1">
+            <dt><i class="icon"></i>购物指南</dt>
+            <dd><a href="/index.php?controller=site&amp;action=help&amp;id=4">购物流程</a></dd>
+            <dd><a href="/index.php?controller=site&amp;action=help&amp;id=26">会员制度</a></dd>
+            <dd><a href="/index.php?controller=site&amp;action=help&amp;id=27">积分说明</a></dd>
+            <dd><a href="/index.php?controller=site&amp;action=help&amp;id=28">交易条款</a></dd>
+            <dd><a href="/index.php?controller=site&amp;action=help&amp;id=29">订单状态</a></dd>
+        </dl>
+        <dl class="help_2">
+            <dt><i class="icon"></i>支付帮助</dt>
+            <dd><a href="/index.php?controller=site&amp;action=help&amp;id=30">货到付款</a></dd>
+            <dd><a href="/index.php?controller=site&amp;action=help&amp;id=31">在线支付</a></dd>
+            <dd><a href="/index.php?controller=site&amp;action=help&amp;id=32">银行电汇</a></dd>
+            <dd><a href="/index.php?controller=site&amp;action=help&amp;id=33">余额支付</a></dd>
+            <dd><a href="/index.php?controller=site&amp;action=help&amp;id=53">支付帮助</a></dd>
+        </dl>
+        <dl class="help_3">
+            <dt><i class="icon"></i>配送帮助</dt>
+            <dd><a href="/index.php?controller=site&amp;action=help&amp;id=34">配送范围及运费</a></dd>
+            <dd><a href="/index.php?controller=site&amp;action=help&amp;id=35">上门自提</a></dd>
+            <dd><a href="/index.php?controller=site&amp;action=help&amp;id=36">加急快递</a></dd>
+            <dd><a href="/index.php?controller=site&amp;action=help&amp;id=37">商品验货与签收</a></dd>
+            <dd><a href="/index.php?controller=site&amp;action=help&amp;id=38">EMS/邮政普包</a></dd>
+        </dl>
+        <dl class="help_4">
+            <dt><i class="icon"></i>售后服务</dt>
+            <dd><a href="/index.php?controller=site&amp;action=help&amp;id=39">换货说明</a></dd>
+            <dd><a href="/index.php?controller=site&amp;action=help&amp;id=40">退货说明</a></dd>
+            <dd><a href="/index.php?controller=site&amp;action=help&amp;id=41">退/换货注意事项</a></dd>
+            <dd><a href="/index.php?controller=site&amp;action=help&amp;id=42">余额的使用与提现</a></dd>
+            <dd><a href="/index.php?controller=site&amp;action=help&amp;id=43">发票制度</a></dd>
+        </dl>
+        <dl class="help_5">
+            <dt><i class="icon"></i>帮助信息</dt>
+            <dd><a href="/index.php?controller=site&amp;action=help&amp;id=44">关于我们</a></dd>
+            <dd><a href="/index.php?controller=site&amp;action=help&amp;id=45">常见问题</a></dd>
+            <dd><a href="/index.php?controller=site&amp;action=help&amp;id=46">找回密码</a></dd>
+            <dd><a href="/index.php?controller=site&amp;action=help&amp;id=47">退订邮件/短信</a></dd>
+            <dd><a href="/index.php?controller=site&amp;action=help&amp;id=48">联系客服</a></dd>
+        </dl>
+        <!--            <div class="map">-->
+        <!--                <h3>自营覆盖区县</h3>-->
+        <!--                <p>本站已向全国2654个区县提供自营配送服务</p>-->
+        <!--            </div>-->
+    </section>
+
+    <section class="copy">
+        <div class="footer" style="text-align:center;">	<p class="links">		<a href="">关于我们</a>|<a href="">常见问题</a>|<a href="">安全交易</a>|<a href="">购买流程</a>|<a href="">如何付款</a>|<a href="">联系我们</a>|<a href="">合作提案</a>	</p>	<p class="copyright">		<span style="line-height:1.5;">Copyright © 2016-2018&nbsp;</span><a class="copyys" target="_blank" href="http://www.miibeian.gov.cn/" style="line-height:1.5;"></a><a href="http://www.beianbeian.com/beianxinxi/870f9c72-1911-4df1-a2e9-22a25decf57b.html" target="_blank" style="color:#0000FF;text-decoration:none;font-family:'Microsoft YaHei', SimHei, Verdana, Arial, sans-serif;font-size:14px;line-height:16px;text-align:center;">苏ICP备16054436号-1</a>	</p></div>
+    </section>
+</div>
+<script src="js/common.js"></script>
+<script>
+    $('#myCarousel').carousel();
+    $('.list-focus li').mouseover(function () {
+        $('.list-focus li').removeClass('active');
+        $(this).addClass('active');
+        var index=$(this).index();
+        $('.focus-con li').removeClass('active');
+        $('.focus-con').find('li').eq(index).addClass('active');
+    })
+</script>
+</body>
+</html>
