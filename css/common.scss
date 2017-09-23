@@ -148,6 +148,16 @@ ul,li{
 .card{
   width: 1200px;
   margin: 0 auto;
+  margin-bottom: 50px;
+  >h3,>p{
+    text-align: center;
+  }
+  >h3{
+    margin-top: 40px;
+  }
+  >p{
+    margin-bottom: 15px;
+  }
 
   ul.daily-rec{
     display: flex;
@@ -198,58 +208,65 @@ ul,li{
       border-right: none;
     }
   }
-  ul.week-rec{
-    display: flex;
-    margin: 0 auto;
-    padding: 5px;
-    li{
-      border-right: 1px solid #cccccc;
-      clear: both;
-      overflow: hidden;
-      //transition: all 0.6s;
-      a{
-        display: block;
-        img{
+  .week-box{
+    height: 150px;
+    overflow: hidden;
+    background: url('../images/colorBorder.png') no-repeat left bottom;
+    ul.week-rec{
+      display: flex;
+      margin: 0 auto;
+      padding: 5px;
+
+      li{
+        border-right: 1px solid #cccccc;
+        clear: both;
+        overflow: hidden;
+        //transition: all 0.6s;
+        a{
           display: block;
-          margin: 0 auto;
-          max-width: 100%;
-          cursor: pointer;
-        }
+          img{
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            cursor: pointer;
+          }
 
 
-      }
-      .img-show{
-        width: 100%;
-        min-height: 160px;
-      }
-      .desc{
-        color: #2aabd2;
-      }
-      .desc:hover{
-        color: #c9302c;
-      }
-      span.price{
-        text-align: left;
-        display: block;
-        font-size: 18px;
-        color: #c9302c;
-        i{
-          float: right;
-          font-size: 12px;
-          color: #262626;
-          text-decoration: line-through;
+        }
+        .img-show{
+          width: 100%;
+          min-height: 160px;
+        }
+        .desc{
+          color: #2aabd2;
+        }
+        .desc:hover{
+          color: #c9302c;
+        }
+        span.price{
+          text-align: left;
+          display: block;
+          font-size: 18px;
+          color: #c9302c;
+          i{
+            float: right;
+            font-size: 12px;
+            color: #262626;
+            text-decoration: line-through;
+          }
         }
       }
-    }
-    li:last-child{
-      border-right: none;
-    }
-    li:hover{
-      //transform: scale(1.4);
-      box-shadow:0px 0px 20px #AFAFAF;
-      position: relative;
-      z-index: 3;
+      li:last-child{
+        border-right: none;
+      }
+      li:hover{
+        //transform: scale(1.4);
+        box-shadow:0px 0px 20px #AFAFAF;
+        position: relative;
+        z-index: 3;
+      }
     }
   }
+
 }
  

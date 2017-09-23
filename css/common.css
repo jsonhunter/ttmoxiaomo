@@ -110,7 +110,14 @@ ul, li {
 
 .card {
   width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 50px; }
+  .card > h3, .card > p {
+    text-align: center; }
+  .card > h3 {
+    margin-top: 40px; }
+  .card > p {
+    margin-bottom: 15px; }
   .card ul.daily-rec {
     display: flex;
     margin: 0 auto;
@@ -148,43 +155,47 @@ ul, li {
           text-decoration: line-through; }
     .card ul.daily-rec li:last-child {
       border-right: none; }
-  .card ul.week-rec {
-    display: flex;
-    margin: 0 auto;
-    padding: 5px; }
-    .card ul.week-rec li {
-      border-right: 1px solid #cccccc;
-      clear: both;
-      overflow: hidden; }
-      .card ul.week-rec li a {
-        display: block; }
-        .card ul.week-rec li a img {
+  .card .week-box {
+    height: 150px;
+    overflow: hidden;
+    background: url("../images/colorBorder.png") no-repeat left bottom; }
+    .card .week-box ul.week-rec {
+      display: flex;
+      margin: 0 auto;
+      padding: 5px; }
+      .card .week-box ul.week-rec li {
+        border-right: 1px solid #cccccc;
+        clear: both;
+        overflow: hidden; }
+        .card .week-box ul.week-rec li a {
+          display: block; }
+          .card .week-box ul.week-rec li a img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            cursor: pointer; }
+        .card .week-box ul.week-rec li .img-show {
+          width: 100%;
+          min-height: 160px; }
+        .card .week-box ul.week-rec li .desc {
+          color: #2aabd2; }
+        .card .week-box ul.week-rec li .desc:hover {
+          color: #c9302c; }
+        .card .week-box ul.week-rec li span.price {
+          text-align: left;
           display: block;
-          margin: 0 auto;
-          max-width: 100%;
-          cursor: pointer; }
-      .card ul.week-rec li .img-show {
-        width: 100%;
-        min-height: 160px; }
-      .card ul.week-rec li .desc {
-        color: #2aabd2; }
-      .card ul.week-rec li .desc:hover {
-        color: #c9302c; }
-      .card ul.week-rec li span.price {
-        text-align: left;
-        display: block;
-        font-size: 18px;
-        color: #c9302c; }
-        .card ul.week-rec li span.price i {
-          float: right;
-          font-size: 12px;
-          color: #262626;
-          text-decoration: line-through; }
-    .card ul.week-rec li:last-child {
-      border-right: none; }
-    .card ul.week-rec li:hover {
-      box-shadow: 0px 0px 20px #AFAFAF;
-      position: relative;
-      z-index: 3; }
+          font-size: 18px;
+          color: #c9302c; }
+          .card .week-box ul.week-rec li span.price i {
+            float: right;
+            font-size: 12px;
+            color: #262626;
+            text-decoration: line-through; }
+      .card .week-box ul.week-rec li:last-child {
+        border-right: none; }
+      .card .week-box ul.week-rec li:hover {
+        box-shadow: 0px 0px 20px #AFAFAF;
+        position: relative;
+        z-index: 3; }
 
 /*# sourceMappingURL=common.css.map */
