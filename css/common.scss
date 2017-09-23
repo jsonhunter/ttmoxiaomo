@@ -148,7 +148,8 @@ ul,li{
 .card{
   width: 1200px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
+  clear: both;
   >h3,>p{
     text-align: center;
   }
@@ -208,17 +209,19 @@ ul,li{
       border-right: none;
     }
   }
-  .week-box{
-    height: 150px;
-    overflow: hidden;
+  .soon-box{
+    clear: both;
+    //overflow: hidden;
+    height: 180px;
     background: url('../images/colorBorder.png') no-repeat left bottom;
-    ul.week-rec{
+    position: relative;
+    z-index: 3;
+    ul.soon-rec{
       display: flex;
       margin: 0 auto;
       padding: 5px;
-
       li{
-        border-right: 1px solid #cccccc;
+        padding: 5px;
         clear: both;
         overflow: hidden;
         //transition: all 0.6s;
@@ -234,39 +237,168 @@ ul,li{
 
         }
         .img-show{
+          padding: 10px;
           width: 100%;
           min-height: 160px;
         }
-        .desc{
-          color: #2aabd2;
-        }
-        .desc:hover{
-          color: #c9302c;
-        }
-        span.price{
-          text-align: left;
-          display: block;
-          font-size: 18px;
-          color: #c9302c;
-          i{
-            float: right;
-            font-size: 12px;
-            color: #262626;
-            text-decoration: line-through;
+        .text-box{
+          padding: 10px;
+          display: none;
+          .desc{
+            color: #2aabd2;
+          }
+          .desc:hover{
+            color: #c9302c;
+          }
+          span.price{
+            text-align: left;
+            display: block;
+            font-size: 18px;
+            color: #c9302c;
+            i{
+              float: right;
+              font-size: 12px;
+              color: #262626;
+              text-decoration: line-through;
+            }
           }
         }
-      }
-      li:last-child{
-        border-right: none;
+
       }
       li:hover{
-        //transform: scale(1.4);
+        background-color: #FFFFFF;
+        background-image:url('../images/colorBorder.png');
+        background-position:left bottom;
+        background-repeat: no-repeat;
         box-shadow:0px 0px 20px #AFAFAF;
         position: relative;
         z-index: 3;
+        .text-box{
+          display: block;
+          position: relative;
+          z-index: 333;
+        }
       }
     }
   }
+  ul.week-rec{
+    clear: both;
+    overflow: hidden;
+    padding: 0;
 
+    li{
+      position: relative;
+      h2{
+        position: relative;
+      }
+      a{
+        display: inline-block;
+        margin-top: -96px;
+      }
+      p{
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        span{
+          font-size: 14px;
+          color: #a2a2a2;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+.band{
+  width: 100%;
+  padding: 40px 0 40px 0;
+  clear: both;
+  overflow: hidden;
+  background: url("../images/newbg.jpg")no-repeat top center;
+  height: 1124px;
+  .band-logo{
+    text-align: center;
+    padding: 25px;
+  }
+  .band-top{
+    margin: 0 auto 15px auto;
+    width: 1200px;
+    text-align: center;
+    background: url("../images/newioc4-6.jpg") no-repeat top center;
+    height: 146px;
+    position: relative;
+    p{
+      position: absolute;
+      color: #FFFFFF;
+      font-size: 22px;
+      left: 200px;
+      top: 45px;
+      text-align: left;
+      span{
+        font-size: 14px;
+      }
+    }
+    img{
+      position: absolute;
+      left: 758px;
+    }
+  }
+  .band-body{
+    margin: 0 auto;
+    width: 1200px;
+    ul{
+      padding: 0;
+      clear: both;
+      overflow: hidden;
+      li{
+        float: left;
+        margin-bottom: 15px;
+
+        a{
+          display: block;
+          clear: both;
+          overflow: hidden;
+          position: relative;
+          .desc{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.5);
+            color: #FFFFFF;
+            font-size: 18px;
+            text-align: center;
+            transition: all .2s linear;
+            height: 0px;
+            line-height: 60px;
+          }
+        }
+
+      }
+      li:nth-child(3n+2){
+        margin: 0 12px;
+      }
+      li:hover{
+        a{
+          .desc{
+            height: 60px;
+          }
+        }
+      }
+    }
+  }
+}
+.common-goods{
+  clear: both;
+  overflow: hidden;
+  ul{
+    margin: 0 auto;
+    width: 1200px;
+    padding: 0;
+    li:nth-child(3n+2){
+      border-left: 1px solid #dddddd;
+      border-right: 1px solid #dddddd;
+    }
+  }
 }
  
